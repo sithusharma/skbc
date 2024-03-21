@@ -1,0 +1,46 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* keeps the logo centered */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.nav-brand {
+  text-align: center;
+  font-family: 'Italiana', serif;
+  font-size: 2em; /* Adjust as needed */
+  flex-grow: 0; /* prevents the brand from growing */
+  padding: 0 20px; /* gives some space around the text */
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1; /* allows nav-links containers to fill the space */
+  justify-content: center; /* centers the links inside the container */
+}
+
+.nav-links.left {
+  margin-right: auto; /* pushes the left container to the left */
+}
+
+.nav-links.right {
+  margin-left: auto; /* pushes the right container to the right */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: palevioletred;
+  padding: 0 10px; /* Adjust the padding as needed */
+  font-family: 'Italiana', serif;
+  font-size: 30px; /* Adjust as needed */
+  flex-grow: 1; /* allows each nav-link to grow */
+  text-align: center; /* centers the text within the nav-link */
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
